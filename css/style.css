@@ -18,6 +18,7 @@ p{
 #nav{
     display : grid;
     grid-template-columns: auto auto;
+    align-items: center;
 }
 
 #nav ul{
@@ -35,17 +36,21 @@ p{
     font-weight: 600;
 
 }
-#nav .profile-pic{
-    background-color: blue;
-    width: 5rem;
-    height: 5rem;
-    border-radius: 50px;
-}
-.right-nav{font-weight: 700;}
-.right-nav img{
-    width: 4rem;
-    height: 4rem;
 
+.right-nav{
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+}
+.right-nav img{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50px;
+    border: 2px solid #8D8DDA;
+}
+.name{
+    margin-left: 15px;
+    letter-spacing: 0.2px;
 }
 #intro-section{
     margin-top: 120px;
