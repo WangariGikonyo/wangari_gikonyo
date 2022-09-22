@@ -1,0 +1,90 @@
+.reddish{border: 1px solid red;}
+.blueish { border: 1px dashed blue;}
+body{
+    background-color: #000235;
+    color: #ffff;
+    margin: 0;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 20px;
+    font-family: 'Raleway', sans-serif;
+}
+.first-page{
+    height: 100vh;
+}
+p{
+    margin: 0;
+}
+#nav{
+    display : grid;
+    grid-template-columns: auto auto;
+}
+
+#nav ul{
+    margin: 0;
+    float: right;
+    display: flex;
+    width: 70%;
+    justify-content: space-between;
+    
+}
+
+#nav li{
+    list-style: none;
+    margin: 0;
+    font-weight: 600;
+
+}
+#nav .profile-pic{
+    background-color: blue;
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50px;
+}
+.right-nav{font-weight: 700;}
+.right-nav img{
+    width: 4rem;
+    height: 4rem;
+
+}
+#intro-section{
+    margin-top: 120px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.intro-text{
+    padding-top: 80px;
+}
+.intro-text h1{
+    margin: 0;
+    font-weight: 700;
+    font-size: 64px;
+}
+.intro-text p{ 
+    margin-top: 30px;
+    font-size: 18px;
+}
+#intro-section .intro-image img{
+    width: 624px;
+    float: right;
+}
+#intro-section .intro-text button{
+    margin-top: 50px;
+    font-weight: 600;
+    font-size: 20px;
+    /* letter-spacing: 0.1em; */
+    background-color: #8D8DDA;
+    color: #ffff;
+    border-radius: 83px;
+    width: 253px;
+    height: 75px;
+    border: none;
+    text-transform: uppercase;
+}
+#about h4{
+    text-align: center;
+}
+.about-me{
+    display: grid;
+    grid-template-columns: auto auto;
+}
