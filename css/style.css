@@ -81,10 +81,56 @@ p{
     border: none;
     text-transform: uppercase;
 }
-#about h4{
+#about h3{
     text-align: center;
+}
+#about h1{
+    text-align: center;
+    font-size: 64px;
+}
+hr{
+    width: 100px;
+    margin-top: -30px;
+    border-color: #8D8DDA;
+    border-width: 2px;
+}
+#about h4{
+    font-size: 28px;
 }
 .about-me{
     display: grid;
     grid-template-columns: auto auto;
+}
+.personal-about p{
+    width: 600px;
+    line-height: 1.6;
+    letter-spacing: 0.2px;
+
+}
+
+.space-between-p{
+    margin-top: 20px
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    
+}
+.skill-box{
+    background: #8D8DDA;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid black;
+}
+.skills-about {
+    padding-left: 10px;
+}
+.second-row{
+    margin-top: 20px;
+}
+.non-tech{
+    margin-bottom: 30px;
+    margin-top: 30px;
 }
