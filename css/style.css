@@ -22,7 +22,12 @@ p{
     grid-template-columns: auto auto;
     align-items: center;
 }
-
+#nav .parent-nav{
+    width: 70%;
+    float: right;
+    display: flex;
+    justify-content: space-between;
+}
 #nav ul{
     margin: 0;
     float: right;
@@ -32,20 +37,18 @@ p{
     
 }
 
-#nav li a{
+#nav a{
     text-decoration: none;
     color: #ffff;
 }
-#nav li a:hover{
+#nav  a:hover{
     color: #8D8DDA;
 
 }
 
-#nav li{
-    list-style: none;
-    margin: 0;
-    font-weight: 600;
 
+.mobile-bar{
+    display: none;
 }
 
 .right-nav{
@@ -148,6 +151,19 @@ hr{
     letter-spacing: 0.2px;
 
 }
+.parent-links .get-in-touch{
+    color: #8D8DDA;
+    font-weight: 700;
+    text-decoration: none;
+    border-radius: 83px;
+    border: 1px solid #8D8DDA;
+    padding: 20px;
+    box-shadow: 0 5px 15px 0 rgb(255 255 255 / 15%);
+    text-transform: uppercase;
+    transition: transform .3s;
+    background-color: transparent;
+
+}
 
 .about-me a{
     color: #8D8DDA;
@@ -182,15 +198,20 @@ hr{
 .skills{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    
-    
+    grid-gap: 10px; 
+}
+.non-tech-skills{
+    display: flex;
+    flex-direction: row;
+    grid-gap: 10px; 
+
 }
 .skill-box{
     background: #8D8DDA;
     border-radius: 5px;
     padding: 10px;
-    /* border: 1px solid black; */
+    display: flex;
+    align-items: center;
 }
 .skills-about {
     padding-left: 10px;
@@ -209,7 +230,7 @@ hr{
 }
 .contact-me .contact-form input{
     display: block;
-    min-width: 100%;
+    min-width: 95%;
     height: 40px;
     background-color: transparent;
     border: 1px solid #8D8DDA;
@@ -229,7 +250,7 @@ hr{
 }
 .contact-me .contact-form textarea{
     display: block;
-    min-width: 100%;
+    min-width: 95%;
     background-color: transparent;
     border: 1px solid #8D8DDA;
     border-radius: 5px;
@@ -302,3 +323,127 @@ hr{
     margin-top: 70px;
     padding-top: 45px;
 }
+
+
+
+/* Mobile Phones *******************/
+@media only screen and (max-width: 600px) {
+    body {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .no-mobile{
+        display: block;
+    }
+    #intro-section{
+        display: flex;
+        flex-direction: column-reverse;
+        margin-top: unset;
+        margin-bottom: 50px;
+        
+    }
+    .intro-text{
+        padding-top: 20px;
+    }
+    .intro-text h1 {
+        margin: 0;
+        font-weight: 700;
+        font-size: 45px;
+    }
+    #intro-section .intro-image img {
+        width: 300px;
+        /* float: right; */
+    }
+    .name a{
+        display: none;
+    }
+    .intro-image{
+        display: flex;
+    justify-content: center;
+    }
+    .parent-links {
+        margin-top: 40px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .footer{margin-top: unset;}
+    .mobile-bar{
+        display: block !important;
+    }
+    #nav ul{
+        width: unset;
+    }
+    #nav ul i{
+        font-size: 25px;
+    }
+    .right-nav img{
+        width: 4rem;
+        height: 4rem;
+    }
+    #about{
+        margin-top: unset;
+    }
+    #about h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .about-me{display: block;}
+    .personal-about p{
+        width: unset;
+        font-size: 19px;
+    }
+    hr{
+        margin-top: -15px;
+    }
+    .skills{
+        display: grid;
+        grid-template-columns:auto auto auto ;
+    }
+    .non-tech-skills{
+        display: grid;
+        grid-template-columns:auto auto;
+        grid-gap: 10px;
+
+    }
+    #about h4 {
+        font-size: 25px;
+    }
+    .contact-me{
+        display: block;
+        margin-top: unset;
+        margin-bottom: 40px;
+    }
+    .contact-text{
+        padding-top: 30px;
+    }
+    .contact-text .contact-p{
+        font-size: 35px;
+    }
+    .contact-icons {
+        margin-top: 40px;
+    }
+    .sub-heading-contact{
+        font-size: 18px;
+    }
+    .form-parent{
+        padding-top: 40px;
+    }
+    .form-parent{
+        font-size: 14px;
+    }
+    .left-nav.responsive {position: relative;}
+    .left-nav.responsive i {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .left-nav.responsive .no-mobile {
+      
+      display: block;
+      
+    }
+  }
