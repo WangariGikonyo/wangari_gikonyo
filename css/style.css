@@ -143,6 +143,9 @@ p{
 #about{
     margin-top: 120px;
     color: #000235;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 10px;
 }
 #about h1{
     text-align: center;
@@ -206,7 +209,7 @@ hr{
     box-shadow: 0 5px 15px 0 rgb(255 255 255 / 15%);
     transform: translateY(-3px);
 }
-
+.left-nav a{font-weight: 500;}
 
 
 .space-between-p{
@@ -227,8 +230,10 @@ hr{
     background: #8D8DDA;
     border-radius: 5px;
     padding: 10px;
+    justify-content: center;
     display: flex;
     align-items: center;
+    color: #ffff;
 }
 .skills-about {
     padding-left: 10px;
@@ -476,6 +481,7 @@ hr{
     #nav{
         padding-left: 20px;
         padding-right: 20px;
+        padding-top: 10px;
     }
     .left-nav{
         display: none;
@@ -533,6 +539,8 @@ hr{
     }
     #about{
         margin-top: unset;
+        padding-left: 20px;
+        padding-right: 20px;
     }
     #about h1 {
         text-align: center;
@@ -559,6 +567,7 @@ hr{
     }
     #about h4 {
         font-size: 25px;
+        margin-bottom: 10px;
     }
     .contact-me{
         display: block;
