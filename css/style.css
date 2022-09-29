@@ -667,4 +667,5 @@ hr{
     .projects-divider{margin-top: 10px;}
     .view-more a{padding: 10px;}
     .project-desc a{padding: 10px 30px;}
+    .right-gradient{display: none;}
   }
