@@ -569,7 +569,7 @@ hr{
 
     }
     #about h4 {
-        font-size: 25px;
+        font-size: 24px;
         margin-bottom: 10px;
     }
     .contact-me{
@@ -607,4 +607,40 @@ hr{
       display: block;
       
     }
+    #project-page{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    #projects{
+        margin-top: unset;
+    }
+    #project-page h1 {
+        text-align: center;
+        font-size: 30px;
+    }
+    .my-projects{
+        display: block;
+    }
+    .project-image img{
+        width: 400px;
+    }
+    .project-desc p{
+        width: unset;
+    }
+    .project-desc{
+        padding-top: unset;
+        text-align: center;
+    }
+    #projects h4{
+        margin-top: 0;
+        margin-bottom: 10px;
+        font-size: 24px;
+    }
+    .second-row-projects{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .projects-divider{margin-top: 10px;}
+    .view-more a{padding: 10px;}
+    .project-desc a{padding: 10px 30px;}
   }
