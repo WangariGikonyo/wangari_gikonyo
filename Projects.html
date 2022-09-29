@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">                                                                                  
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/fontawesome.min.css" integrity="sha384-jLKHWM3JRmfMU0A5x5AkjWkw/EYfGUAGagvnfryNV3F9VqM98XiIH7VBGVoxVSc7" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
     <link rel="stylesheet" href="css/style.css">
     <title>Projects</title>
 </head>
@@ -29,7 +31,7 @@
              <a class="no-mobile" href="./About.html">ABOUT</a>
              <a class="no-mobile" href="./Projects.html">PROJECTS</a>
              <a class="no-mobile" href="./Contact.html">CONTACTS</a>
-             <a class="mobile-bar" href=""><i onclick="myFunction()" class="fas fa-bars"></i></a>  
+             <a class="mobile-bar" href="javascript:void(0)"><i onclick="myFunction()" class="fas fa-bars"></i></a>  
             </div>
            
      </div>
@@ -94,6 +96,16 @@
 
     </div>
 
-    
+    <script>
+       
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "left-nav") {
+            x.className += " responsive";
+          } else {
+            x.className = "left-nav";
+          }
+        }
+        </script>
 </body>
 </html>

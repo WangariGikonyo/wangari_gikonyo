@@ -34,12 +34,12 @@ p{
     grid-template-columns: auto auto;
     align-items: center;
     background-color: #000235;
-    padding-left: 100px;
-    padding-right: 100px;
     padding-top: 20px;
-    padding-bottom: 10px;
     position: relative;
+    box-shadow: 0 5px 15px 0 rgb(255 255 255 / 15%);
 }
+.right-nav{padding-left: 100px; padding-bottom: 10px;}
+.left-nav{padding-right: 100px;  padding-bottom: 10px;}
 .gradient{
     width: 300px;
     height: 300px;
@@ -84,12 +84,6 @@ p{
     color: #8D8DDA;
 
 }
-
-
-.mobile-bar{
-    display: none;
-}
-
 .right-nav{
     display: flex;
     font-weight: 700;
@@ -495,6 +489,7 @@ hr{
     box-shadow: 0 5px 15px 0 rgb(255 255 255 / 15%);
     transform: translateY(-3px);
 }
+.left-nav .mobile-bar{display: none;}
 
 
 
@@ -506,15 +501,27 @@ hr{
       padding-right: 20px;
     }
     #nav{
-        padding-left: 20px;
-        padding-right: 20px;
         padding-top: 10px;
+        display: block;
     }
-    .left-nav{
+    .right-nav{padding-left: 20px; padding-bottom: 10px;}
+    .left-nav{padding-right: 20px;  padding-bottom: 10px;}
+    /* .left-nav a{
         display: none;
+    } */
+    #nav .parent-nav {
+        width: unset;
+        float: unset;
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        gap: 10px;
+        justify-content: space-between;
+      
     }
     .no-mobile{
-        display: block;
+        display: none;
+        text-align: end;
     }
     #intro-section{
         display: flex;
@@ -553,6 +560,9 @@ hr{
     .footer{margin-top: unset;}
     .mobile-bar{
         display: block !important;
+        position: absolute;
+        top: 35px;
+        right: 55px;
     }
     #nav ul{
         width: unset;
@@ -620,17 +630,7 @@ hr{
     .form-parent{
         font-size: 14px;
     }
-    .left-nav.responsive {position: relative;}
-    .left-nav.responsive i {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .left-nav.responsive .no-mobile {
-      
-      display: block;
-      
-    }
+   
     #project-page{
         padding-left: 20px;
         padding-right: 20px;
@@ -669,3 +669,29 @@ hr{
     .project-desc a{padding: 10px 30px;}
     .right-gradient{display: none;}
   }
+
+
+ @media screen and (max-width: 600px) {
+    .left-nav.responsive {position: relative;}
+    .left-nav.responsive i {
+      position: absolute;
+      right: -20px;
+      top: -95px;
+    }
+    .left-nav.responsive .no-mobile {
+      display: block;
+      padding: 15px;
+
+    }
+    .left-nav.responsive {
+        display: block;
+        position: relative;
+        box-shadow: 0 5px 15px 0 rgb(255 255 255 / 15%);
+    
+    }
+    #nav.responsive{
+        /* box-shadow: 0 5px 15px 0 rgb(255 255 255 / 15%); */
+
+
+    }
+} 

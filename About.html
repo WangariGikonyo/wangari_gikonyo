@@ -24,13 +24,13 @@
             </div>
             
         </div>
-        <div class="  left-nav " id="myTopnav">
+        <div class="left-nav " id="myTopnav">
             <div class="parent-nav">
              <a class="no-mobile" href="./home.html">HOME</a>
              <a class="no-mobile" href="./About.html">ABOUT</a>
              <a class="no-mobile" href="./Projects.html">PROJECTS</a>
              <a class="no-mobile" href="./Contact.html">CONTACTS</a>
-             <a class="mobile-bar" href=""><i onclick="myFunction()" class="fas fa-bars"></i></a>  
+             <a class="mobile-bar" href="javascript:void(0)"><i onclick="myFunction()" class="fas fa-bars"></i></a>  
             </div>
            
      </div>
@@ -93,6 +93,16 @@
          </div>
     </div>
 
-    
+    <script>
+       
+        function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "left-nav") {
+            x.className += " responsive";
+          } else {
+            x.className = "left-nav";
+          }
+        }
+        </script>    
 </body>
 </html>
