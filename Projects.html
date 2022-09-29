@@ -12,8 +12,8 @@
     <title>Projects</title>
 </head>
 <body>
-    <div id="nav">
-        <div class="  right-nav">
+    <div class="" id="nav">
+        <div class=" right-nav">
             <div class="profile-pic">
                 <a href="./home.html"><img src="./images/wangari_gikonyo.jpg" alt="wangari_gikonyo"></a>
             </div>
@@ -22,16 +22,75 @@
             </div>
             
         </div>
-        <div class=" left-nav">
-            <ul>
-                <li class="no-mobile"><a href="">HOME</a></li>
-                <li class="no-mobile"><a href="./About.html">ABOUT</a></li>
-                <li class="no-mobile"><a href="./Projects.html">PROJECTS</a></li>
-                <li class="no-mobile"><a href="./Contact.html">CONTACTS</a></li>
-                <li class="mobile-bar"><i class="fas fa-bars"></i></li>
-                
-            </ul>
-        </div>
+        <div class="  left-nav " id="myTopnav">
+               <div class="parent-nav">
+                <a class="no-mobile" href="">HOME</a>
+                <a class="no-mobile" href="./About.html">ABOUT</a>
+                <a class="no-mobile" href="./Projects.html">PROJECTS</a>
+                <a class="no-mobile" href="./Contact.html">CONTACTS</a>
+                <a class="mobile-bar" href=""><i onclick="myFunction()" class="fas fa-bars"></i></a>  
+               </div>
+              
+        </div> 
     </div>
+    <div id="project-page">
+
+        <div id="projects">
+            <h1>MY WORK</h1>
+            <hr>
+            <h3> Check out some of my  personal and clients projects.</h3>
+            <div class="my-projects ">
+                <div class=" project-image">
+                    <div class="image-parent ">
+                        <img src="./images/kare.png" alt="">
+                    </div>
+                    
+                </div>
+                <div class=" project-desc ">
+                    <div>
+                        <h4>Fly Event</h4>
+                        <p>Fly event is a platform that I created where event organizers can post events,
+                            and where people can search and book events that they would like to attend.
+                        </p>
+
+                    </div>
+                    <div class="parent-links">
+                         <a href="https://fly-inc.herokuapp.com/">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class="projects-divider"></div>
+            <div class="my-projects ">
+                
+                <div class=" project-desc ">
+                    <div>
+                        <h4>Elegant Web Designers</h4>
+                        <p>Elegant Web Designers is a company portfolio that I made for a client. It contains the details, services and 
+                            projects that they offer.
+                        </p>
+
+                    </div>
+                    <div class="parent-links">
+                         <a href="https://elegantwebdesignerss.com/">View</a>
+                    </div>
+                </div>
+                <div class=" project-image">
+                    <div class="image-parent">
+                        <img src="./images/elegant-web.png" alt="">
+                    </div>
+                    
+                </div>
+            </div>
+            <div class="view-more">
+                <a href="">View More Projects</a>
+            </div>
+        </div>
+        <div class="footer ">
+            <p>© Copyright 2022. designed and developed by Wangari Gikonyo.</p> 
+         </div>
+
+    </div>
+
+    
 </body>
 </html>
