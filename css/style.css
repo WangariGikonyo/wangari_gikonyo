@@ -12,6 +12,7 @@ body{
     padding-bottom: 10px;
     background-color: #000235;
     color: #ffff;
+    position: relative;
 
 
 }
@@ -37,6 +38,28 @@ p{
     padding-right: 100px;
     padding-top: 20px;
     padding-bottom: 10px;
+    position: relative;
+}
+.gradient{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top:75px;
+    left: 0px;
+    background: rgba(141, 141, 218, 0.5);
+    filter: blur(153px);
+}
+.right-gradient{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background: rgba(141, 141, 218, 0.5);
+    filter: blur(153px);
+    overflow: hidden;
 }
 #nav .parent-nav{
     width: 70%;
@@ -266,11 +289,12 @@ hr{
 }
 .contact-me .contact-form input::placeholder{
     color: #8D8DDA;
+    font-size: 12px;
     padding-left: 15px;
 }
 .contact-me .contact-form textarea::placeholder{
     color: #8D8DDA;
-    padding-left: 15px;
+    padding-left: 10px;
     padding-top: 5px;
 }
 .contact-me .contact-form textarea{
@@ -307,7 +331,7 @@ hr{
 }
 .form-parent button:hover{
     background-color: transparent;
-    color: #ffff;
+    color: #8D8DDA;
     border: 1px solid #8D8DDA;
     border-radius: 5px;
     padding: 10px;
