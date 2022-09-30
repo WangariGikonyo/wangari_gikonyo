@@ -5,6 +5,9 @@ body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
+.first-page-parent{
+    height: 100vh;
+}
 .first-page{
     padding-left: 100px;
     padding-right: 100px;
@@ -13,6 +16,7 @@ body{
     background-color: #000235;
     color: #ffff;
     position: relative;
+
 
 
 }
@@ -55,7 +59,7 @@ p{
     height: 300px;
     border-radius: 50%;
     position: absolute;
-    top: 0px;
+    top: 50px;
     right: 0px;
     background: rgba(141, 141, 218, 0.5);
     filter: blur(153px);
@@ -530,13 +534,17 @@ hr{
         margin-bottom: 50px;
         
     }
+    .footer p{
+        font-size: 14px;
+    }
     .intro-text{
         padding-top: 20px;
+        text-align: center;
     }
     .intro-text h1 {
         margin: 0;
         font-weight: 700;
-        font-size: 30px;
+        font-size: 35px;
     }
     #intro-section .intro-text a{
         padding: 15px;
@@ -576,8 +584,7 @@ hr{
         font-size: 25px;
     }
     .right-nav img{
-        width: 2rem;
-        height: 2rem;
+        width: 32px;
     }
     #about{
         margin-top: unset;
@@ -674,14 +681,15 @@ hr{
     .project-desc a{padding: 10px 30px;}
     .right-gradient{display: none;}
   }
+  #nav a{font-size: 16px;}
 
 
  @media screen and (max-width: 600px) {
     .left-nav.responsive {position: relative;}
     .left-nav.responsive i {
       position: absolute;
-      right: -65px;
-      top: 0px;
+      right: 0px;
+      top: -65px;
     }
     .left-nav.responsive .no-mobile {
       display: block;
