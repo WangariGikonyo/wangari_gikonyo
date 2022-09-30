@@ -8,7 +8,7 @@ body{
 .homepage{
     background-color: #000235;
 }
-.homepage .footer{display: block !important;}
+.homepage .footer{display: block;}
 
 .first-page{
     padding-left: 100px;
@@ -540,7 +540,7 @@ hr{
         font-size: 14px;
     }
     .intro-text{
-        padding-top: 90px;
+        padding-top: 100px;
         text-align: center;
     }
     .intro-text h1 {
@@ -687,9 +687,10 @@ hr{
     .view-more a{padding: 10px;}
     .project-desc a{padding: 10px 30px;}
     .right-gradient{display: none;}
+    #nav a{font-size: 16px;}
+    .homepage .footer{display: none;}
   }
-  #nav a{font-size: 16px;}
-  .homepage .footer{display: none;}
+ 
 
 
  @media screen and (max-width: 600px) {
