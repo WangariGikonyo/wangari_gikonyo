@@ -5,6 +5,9 @@ body{
     margin: 0;
     font-family: 'Raleway', sans-serif;
 }
+.homepage{
+    background-color: #000235;
+}
 .first-page-parent{
     height: 100vh;
 }
@@ -585,6 +588,7 @@ hr{
     }
     .right-nav img{
         width: 32px;
+        height: 32px;
     }
     #about{
         margin-top: unset;
