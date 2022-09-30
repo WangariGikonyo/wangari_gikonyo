@@ -536,7 +536,11 @@ hr{
     .intro-text h1 {
         margin: 0;
         font-weight: 700;
-        font-size: 45px;
+        font-size: 30px;
+    }
+    #intro-section .intro-text a{
+        padding: 15px;
+        font-size: 10px;
     }
     #intro-section .intro-image img {
         width: 300px;
@@ -561,8 +565,9 @@ hr{
     .mobile-bar{
         display: block !important;
         position: absolute;
-        top: 35px;
-        right: 55px;
+        top: 20px;
+        right: 32px;
+        font-size: 20px;
     }
     #nav ul{
         width: unset;
@@ -571,8 +576,8 @@ hr{
         font-size: 25px;
     }
     .right-nav img{
-        width: 4rem;
-        height: 4rem;
+        width: 2rem;
+        height: 2rem;
     }
     #about{
         margin-top: unset;
@@ -675,8 +680,8 @@ hr{
     .left-nav.responsive {position: relative;}
     .left-nav.responsive i {
       position: absolute;
-      right: -20px;
-      top: -95px;
+      right: -65px;
+      top: 0px;
     }
     .left-nav.responsive .no-mobile {
       display: block;
