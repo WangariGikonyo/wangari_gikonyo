@@ -8,9 +8,6 @@ body{
 .homepage{
     background-color: #000235;
 }
-.first-page-parent{
-    height: 100vh;
-}
 .first-page{
     padding-left: 100px;
     padding-right: 100px;
@@ -18,7 +15,7 @@ body{
     padding-bottom: 10px;
     background-color: #000235;
     color: #ffff;
-    position: relative;
+    /* position: relative; */
 
 
 
@@ -607,6 +604,10 @@ hr{
     }
     hr{
         margin-top: -15px;
+    }
+    .project-image{
+        display: flex;
+        justify-content: center;
     }
     .skills{
         display: grid;
